@@ -1,10 +1,19 @@
-import React, { Component } from "react";
+import React, {Component, useState} from "react";
 import './App.css';
+import { Loading } from "./Loading";
 
-class Charts extends Component{
-    render(){
+
+
+
+function Charts(){
+    
+   
+       
+
     return(
-        <>
+           
+           <>
+    
         <div className="List">
             <ul>
                 <li>Lunch</li>
@@ -15,11 +24,12 @@ class Charts extends Component{
                 <li>Juice</li>
                 <li>Ice-Cream</li>
             </ul>
-
-            <button className="btn btn-primary">Order Now</button>
+            <button className="btn btn-primary" >Order Now</button>
+          
             </div>
-        </>
-    )
-}
-}
+       </>
+               )
+    
+    }
+
 export default Charts;

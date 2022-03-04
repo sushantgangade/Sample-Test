@@ -3,11 +3,18 @@ import { Component } from "react";
 import './App.css';
 
 class Folder extends Component{
+
+
+    state = {
+        name:"Tasty Bites",
+        
+    };
     render() {
             return (
             <>
-            <h1 >What are you having for lunch?</h1>
-            <h2>The Tasty and Spicy chats as well Veg and Non- Veg Available , Please order Now!  </h2>
+            <h1 >{this.props.headeName} </h1>
+            <h2>The {this.state.name} & chats as well Veg and Non- Veg Available , Please order Now!  </h2>
+            
             </>
             )
     }

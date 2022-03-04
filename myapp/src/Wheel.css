@@ -1,0 +1,136 @@
+li:first-child .text{
+    background-color: aqua;
+}
+li:nth-child(2) .text{
+    background-color: rgb(238, 17, 238);
+}
+li:nth-child(3) .text{
+    background-color: rgb(8, 45, 255);
+}
+li:nth-child(4) .text{
+    background-color: rgb(241, 11, 49);
+}
+li:nth-child(5) .text{
+    background-color: rgb(217, 255, 0);
+}
+li:nth-child(6) .text{
+    background-color: rgb(0, 255, 76);
+}
+li:nth-child(7) .text{
+    background-color: rgb(90, 129, 214);
+}
+li:nth-child(8) .text{
+    background-color: rgb(173, 71, 110);
+}
+li:nth-child(9) .text{
+    background-color: rgb(224, 148, 86);
+}
+li:nth-child(10) .text{
+    background-color: rgb(201, 108, 219);
+}
+li:nth-child(11) .text{
+    background-color: rgb(35, 157, 179);
+}
+li:nth-child(12) .text{
+    background-color: rgb(148, 197, 12);
+}
+li:first-child{
+    transform: rotate(0deg) skewY(-60deg);
+}
+li:nth-child(2){
+    transform: rotate(30deg) skewY(-60deg);
+}
+li:nth-child(3){
+    transform: rotate(60deg) skewY(-60deg);
+}
+li:nth-child(4){
+    transform: rotate(90deg) skewY(-60deg);
+}
+li:nth-child(5){
+    transform: rotate(120deg) skewY(-60deg);
+}
+li:nth-child(6){
+    transform: rotate(150deg) skewY(-60deg);
+}
+li:nth-child(7){
+    transform: rotate(180deg) skewY(-60deg);
+}
+li:nth-child(8){
+    transform: rotate(210deg) skewY(-60deg);
+}
+li:nth-child(9){
+    transform: rotate(240deg) skewY(-60deg);
+}
+li:nth-child(10){
+    transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11){
+    transform: rotate(300deg) skewY(-60deg);
+}
+li:nth-child(12){
+    transform: rotate(330deg) skewY(-60deg);
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    list-style: none;
+}
+li{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+}
+.text{
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    display: block;
+    transform: skewY(60deg) rotate(15deg);
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.mark{
+    width: 3px;
+    height: 3px;
+    
+    border-top: 50px solid black;
+    left: 10%;
+    top: 20px;
+    z-index: 1;
+    margin-left: 50px;  
+    transform: rotate(90deg); 
+    margin-left: 50px;
+    margin-top: 60px;
+    position: absolute;
+}
+.start-rotate{
+    animation: start-rotate 1s linear infinite;
+}
+@keyframes start-rotate{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.stop-rotate{
+    animation-play-state: paused;
+}
+button{
+        border-radius: 140%;
+        background-color: white;
+        margin-left: 75px;
+        margin-top: -130px;
+        position: absolute;
+        border: white;
+}
