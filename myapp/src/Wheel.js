@@ -11,12 +11,14 @@ import './Wheel.css';
          this.setState({
              name: "circle start-rotate"
          });
+         console.log('startRotation-360 deg');
          setTimeout(() => {
             this.setState({
-                name:"circle start-rotate stop-rotate"
+                name:"circle start-rotate stop-rotate 360"
             });
             
         },Math.floor(Math.random()*3000)+1);
+        
      }
      
      render(){
@@ -25,10 +27,9 @@ import './Wheel.css';
              <div id="wheel_main">
                  <div className="mark"></div>
                  <ul className={this.state.name}>
-                     <li>
+                    <li>
                        <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"  
                          spellCheck="false">
                        1</div>
                         
@@ -36,8 +37,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                    
                          spellCheck="false">
                        2</div>
                       
@@ -46,7 +46,6 @@ import './Wheel.css';
                      <li>
                      <div
                          className="text"
-                         contentEditable="true"
                          spellCheck="false">
                        3</div>
                       
@@ -55,7 +54,6 @@ import './Wheel.css';
                      <li>
                      <div
                          className="text"
-                         contentEditable="true"
                          spellCheck="false">
                        4</div>
                       
@@ -63,8 +61,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                   
                          spellCheck="false">
                        5</div>
                       
@@ -72,8 +69,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                    
                          spellCheck="false">
                        6</div>
                       
@@ -81,8 +77,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                      
                          spellCheck="false">
                        7</div>
                       
@@ -90,8 +85,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                      
                          spellCheck="false">
                        8</div>
                       
@@ -99,8 +93,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                  
                          spellCheck="false">
                        9</div>
                       
@@ -109,7 +102,7 @@ import './Wheel.css';
                      <li>
                      <div
                          className="text"
-                         contentEditable="true"
+                       
                          spellCheck="false">
                        10</div>
                       
@@ -117,8 +110,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"                      
                          spellCheck="false">
                        11</div>
                       
@@ -126,8 +118,7 @@ import './Wheel.css';
 
                      <li>
                      <div
-                         className="text"
-                         contentEditable="true"
+                         className="text"            
                          spellCheck="false">
                        12</div>
                       
